@@ -1,0 +1,17 @@
+{
+  "name": "ChuckFacebookChat",
+  "permissions": [
+    "tabs", "https://www.facebook.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://www.facebook.com/*",
+        "https://www.facebook.com/*"
+      ],
+      "js": ["app.js"]
+    }
+  ],
+  "manifest_version" : 2,
+  "version" : "1.0"
+}
